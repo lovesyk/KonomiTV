@@ -55,8 +55,8 @@ COPY ./client /code/client
 RUN yarn build
 
 # server のセットアップ兼実行時のイメージ
-# Ubuntu 20.04 LTS をベースイメージとして利用
-FROM nvidia/cuda:11.4.1-runtime-ubuntu20.04
+# Ubuntu 22.04 LTS をベースイメージとして利用
+FROM nvidia/cuda:11.7.0-runtime-ubuntu22.04
 
 # タイムゾーンを東京に設定
 ENV TZ=Asia/Tokyo

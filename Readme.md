@@ -37,7 +37,7 @@
 ### サーバー
 
 - **Windows PC または Linux PC**
-  - Windows 10 Pro と Ubuntu 20.04 LTS で動作確認を行っています。
+  - Windows 10 Pro と Ubuntu 22.04 LTS で動作確認を行っています。
   - RedHat 系 OS でも動くかもしれませんが、環境がないためサポートはできません。
   - Linux PC の場合は Docker で動かすこともできます（後述）。
   - ARM 向けのサードパーティーライブラリの実行ファイルを同梱していないため、ラズパイなどの ARM の Linux PC では今のところ動きません。
@@ -236,7 +236,7 @@ TVRemotePlus ではバイナリごと Git の管理下に含めていました�
 将来的にはインストーラー側で自動ダウンロード/アップデートするようにしたいところですが、現時点では手動でのダウンロードと配置が必要です。
 
 Linux 向けの実行ファイルも同梱しています。拡張子は `.elf` です。  
-Linux (Ubuntu 20.04 LTS x64) で動作することを確認しました。
+Linux (Ubuntu 22.04 LTS x64) で動作することを確認しました。
 
 > なお、Linux で QSVEncC・NVEncC・VCEEncC を使う場合は、別途 FFmpeg (libav) ライブラリと、それぞれ [Intel Media Driver](https://github.com/rigaya/QSVEnc/blob/master/Install.ja.md#linux-ubuntu-2004) / [NVIDIA Graphics Driver](https://github.com/rigaya/NVEnc/blob/master/Install.ja.md#linux-ubuntu-2004) / [AMD Driver](https://github.com/rigaya/VCEEnc/blob/master/Install.ja.md#linux-ubuntu-2004) のインストールが必要です。  
 > VCEEncC の Linux サポートはつい最近追加されたばかりなので、安定してエンコードできるかは微妙です（動かせる環境がない…）。
